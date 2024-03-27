@@ -1,0 +1,7 @@
+idm_login,first_name,middle_name,last_name,full_name,email,employeenumber,fauid,env
+w999991,John,,Doe,John Doe,john.doe@example.com,10000091,f999991,lower
+z999991,John,,Doe,John Doe,john.doe@example.com,10000091,f999991,upper
+w999992,Jane,,Doe,Jane Doe,jane.doe@example.com,10000091,f999991,lower
+z999992,Jane,,Doe,Jane Doe,jane.doe@example.com,10000091,f999991,upper
+w999993,James,,Bond,James Bond,james.bond@example.com,10000091,f999991,lower
+z999993,James,,Bond,James Bond,lames.bond@example.com,10000091,f999991,upper

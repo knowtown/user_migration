@@ -1,0 +1,10 @@
+---
+- name: Playbook to change ownership on files to new uid and gid
+  hosts: testing
+  pre_tasks:
+    - name: Place holder for any tasks needed before roles
+      ansible.builtin.debug:
+        msg: "Add any pre tasks here"
+  roles:
+    - {role: find_users}
+    - {role: chg_owner}

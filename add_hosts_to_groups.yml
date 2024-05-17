@@ -1,0 +1,9 @@
+---
+- name: Playbook to test adding hosts to hostgroups from csv
+  hosts: prescan
+  pre_tasks:
+    - name: PreTask Place holder
+      ansible.builtin.debug:
+        msg: "Add pre tasks here to run before roles"
+  roles:
+    - {role: add_host_to_group}

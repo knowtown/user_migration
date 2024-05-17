@@ -1,0 +1,9 @@
+srvr_name,HostGroup,AdminHostGroup
+jmrh7test,hg-z-na-lnx-up-0001111-p,hg-z-na-lnx-up-p
+jmrh7test,hg-z-na-lnx-up-0002222-p,hg-z-na-lnx-up-p
+jmrh7test,hg-z-na-lnx-up-0003333-p,hg-z-na-lnx-up-p
+jmrh7test,hg-z-na-lnx-up-0004444-p,hg-z-na-lnx-up-p
+rhel7client,hg-z-na-lnx-lo-0001111-d,hg-z-na-lnx-lo-d
+rhel7client,hg-z-na-lnx-lo-0002222-d,hg-z-na-lnx-lo-d
+rhel7client,hg-z-na-lnx-lo-0003333-d,hg-z-na-lnx-lo-d
+rhel7client,hg-z-na-lnx-lo-0004444-d,hg-z-na-lnx-lo-d

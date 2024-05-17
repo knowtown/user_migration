@@ -1,0 +1,47 @@
+---
+- name: Playbook to test connectivity 
+  hosts: prescan
+  pre_tasks:
+    - name: PreTask Place holder
+      ansible.builtin.debug:
+        msg: "Add pre tasks here to run before roles"
+  tasks:
+    - name: create idm hosts list as fact
+      set_fact:
+        ipaclient_servers:
+          - rhidm01.knowtown.home
+          - rhidm02.knowtown.home
+
+    - name: list idm hosts
+      debug:
+        var: ipaclient_servers
+
+    - name: check connectivity to idm hosts port 389 from client
+      wait_for:
+        host: "{{ item }}"
+        port: 389
+        delay: 5
+        state: started
+        timeout: 30
+      loop: "{{ ipaclient_servers }}"
+      delegate_to: "{{ ansible_hostname }}"
+
+    - name: check connectivity to idm hosts port 636 from client
+      wait_for:
+        host: "{{ item }}"
+        port: 636
+        delay: 5
+        state: started
+        timeout: 30
+      loop: "{{ ipaclient_servers }}"
+      delegate_to: "{{ ansible_hostname }}"
+
+    - name: check connectivity to idm hosts port 464 from client
+      wait_for:
+        host: "{{ item }}"
+        port: 464
+        delay: 5
+        state: started
+        timeout: 30
+      loop: "{{ ipaclient_servers }}"
+      delegate_to: "{{ ansible_hostname }}"

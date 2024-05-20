@@ -1,0 +1,9 @@
+---
+ansible-navigator:
+  logging:
+    critical
+  editor:
+    command: vim_from_setting
+    console: false
+  playbook-artifact:
+    enable: false

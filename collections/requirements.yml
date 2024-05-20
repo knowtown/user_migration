@@ -2,3 +2,4 @@
 collections:
 - ansible.utils
 - community.general
+- freeipa.ansible_freeipa

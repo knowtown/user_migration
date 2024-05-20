@@ -1,6 +1,6 @@
 ---
 - name: Playbook to test adding hosts to hostgroups from csv
-  hosts: prescan
+  hosts: local
   pre_tasks:
     - name: PreTask Place holder
       ansible.builtin.debug:
